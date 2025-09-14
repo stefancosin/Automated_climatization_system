@@ -7,7 +7,8 @@
 
 #define LOW_TEMPERATURE 25
 #define HIGH_TEMPERATURE 30
-#define TWO_SECONDS 2
+#define TWO_SECONDS 2000
+#define FIVE_SECONDS 5000
 
 float hum;
 float temp;
@@ -21,9 +22,8 @@ void setup() {
   lcdInit();
   rgbInit();
 
-  lcdClear();
   lcdInitWrite();
-  delay(TWO_SECONDS);
+  delay(FIVE_SECONDS);
   lcdClear();
 }
 
@@ -74,6 +74,5 @@ void loop() {
     /* Turn the cooler on */
     coolerOn();
   }
-
   delay(TWO_SECONDS);
 }

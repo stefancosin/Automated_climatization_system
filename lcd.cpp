@@ -13,11 +13,11 @@ void lcdClear() {
 }
 
 void lcdInitWrite() {
-    lcd.setCursor(0, 0);
-    lcd.print("ESP32 Weather");
-    lcd.setCursor(0, 1);
-    lcd.print("Initializing..");
     lcdClear();
+    lcd.setCursor(1, 0);
+    lcd.print("Climatization");
+    lcd.setCursor(5, 1);
+    lcd.print("System");
 }
 
 void lcdTemperatureWrite(float temperature) {
