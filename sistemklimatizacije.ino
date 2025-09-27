@@ -31,7 +31,7 @@ void loop() {
   /* 1 - Read temperature and humidity */
   readTemperatureAndHumidity(&hum, &temp);
   /* 2 - Check if the temperature and humidity values are valid */
-  if(isTemperatureValid(temp) || isProximityValid(hum)) {
+  if(isTemperatureValid(temp) || isHumidityValid(hum)) {
     lcdSensorFaulttWrite();
     /* Restart the loop function */
     return;

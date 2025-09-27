@@ -15,7 +15,7 @@ bool isTemperatureValid(float temperature) {
     return isnan(temperature);
 }
 
-bool isProximityValid(float humidity) {
+bool isHumidityValid(float humidity) {
     return isnan(humidity);
 }
 

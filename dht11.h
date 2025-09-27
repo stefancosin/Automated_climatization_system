@@ -10,6 +10,6 @@
 void dht11Init();
 void readTemperatureAndHumidity(float* humidity, float* temperature);
 bool isTemperatureValid(float temperature);
-bool isProximityValid(float humidity);
+bool isHumidityValid(float humidity);
 
 #endif
