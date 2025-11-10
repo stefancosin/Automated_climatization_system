@@ -74,5 +74,7 @@ void loop() {
     /* Turn the cooler on */
     coolerOn();
   }
+
   delay(TWO_SECONDS);
+  lcdClear();
 }
